@@ -14,5 +14,14 @@
     "commander": "7.2.0",
     "eslint": "7.25.0",
     "lerna": "^4.0.0"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walk-liuyan/dino-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/walk-liuyan/dino-cli/issues"
+  },
+  "homepage": "https://github.com/walk-liuyan/dino-cli#readme"
 }
