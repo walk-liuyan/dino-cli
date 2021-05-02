@@ -57,7 +57,6 @@ function checkPkgVersion() {
 function checkNodeVersion() {
   const curNodeV = process.version
   const lowNodeV = constant.LOWEST_NODE_VERSION
-  log.info(curNodeV, '-', lowNodeV)
 
   // semver
   if(!semver.gte(curNodeV, lowNodeV)) {
@@ -88,7 +87,6 @@ function checkUserHome() {
 
 // pathExists 实现原理：fs.accessSync(path)
     log.info('用户主目录', userHome)
-    log.verbose('debug', 'checkUserHome~')
 
     if(!userHome || !pathExists(userHome)) {
         throw new Error(colors.red('当前登陆用户主目录不存在'))
@@ -103,7 +101,6 @@ function checkUserHome() {
 function getEnvConf() {
     const dotenv = require('dotenv')
     const dotEnvPath = path.resolve(userHome, '.env')
-    console.log('dotEnvPath', dotEnvPath)
     // 读取环境变量：如果本地有.env 会读取本地.env里的内容
     if(pathExists(dotEnvPath)) {
         // 读取 .env 的 配置, dotenv 会将变量放入 环境变量process.env
@@ -138,12 +135,11 @@ async function checkUpdate() {
     // 2、调用npm OpenApi，获取所有版本号
     const { getNpmSemverVersion } = require('@dino-cli-dev/get-npm-info')
     const latestVersion = await getNpmSemverVersion(curVersion, npmName)
-    console.log('latestVersion', latestVersion)
-
+// 3、提取所有版本号，比对哪些版本号是大于当前版本号
+    // 4、提示安装最新的版本号
     if(latestVersion && semver.gt(latestVersion, curVersion)) {
         log.warn(colors.yellow(`please update ${npmName}, current version is ${curVersion}, latest version is ${latestVersion}
 update command： npm install -g ${npmName}`))
     }
-    // 3、提取所有版本号，比对哪些版本号是大于当前版本号
-    // 4、提示安装最新的版本号
+
  }

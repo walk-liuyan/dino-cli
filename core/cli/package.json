@@ -6,7 +6,7 @@
   "homepage": "https://github.com/walk-liuyan/dino-cli#readme",
   "license": "ISC",
   "bin": {
-    "dino-cli-dev": "bin/index.js"
+    "dino-cli-dev": "../../index.js"
   },
   "main": "",
   "directories": {

@@ -7,11 +7,9 @@ const urlJoin = require('url-join')
 const semver = require('semver')
 
 async function getNpmInfo(npmName, _registry) {
-    console.log(npmName, _registry)
     if(!npmName) return null
     const registry = _registry || getDefaultRegistry()
     const npmInfoUrl = urlJoin(registry, npmName)
-    console.log('npmInfoUrl', npmInfoUrl)
     return axios.get(npmInfoUrl).then((res) => {
       const { status, data } = res;
       if(status === 200) {
@@ -37,10 +35,8 @@ function getDefaultRegistry(isOriginal = true) {
   }
 
   function getSemverVersions(baseVersion, versions) {
-    console.log('baseVersion, versions', baseVersion, versions)
     versions = versions
     .filter(v => {
-      console.log('v,', v, baseVersion)
       // 满足 > 当前条件
       return semver.satisfies(v, `^${baseVersion}`)
     })

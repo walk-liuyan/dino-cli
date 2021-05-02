@@ -1,15 +1,18 @@
 {
   "name": "dino-cli-dev",
   "version": "1.0.3",
-  "description": "dino cli",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "dino cli dev",
+  "main": "bin/index.js",
+  "bin": {
+    "dino-cli-dev": "bin/index.js"
   },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "commander": "7.2.0",
+    "eslint": "7.25.0",
     "lerna": "^4.0.0"
   }
 }
