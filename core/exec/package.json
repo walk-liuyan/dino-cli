@@ -1,9 +1,9 @@
 {
-  "name": "@dino-cli-dev/utils",
-  "version": "1.0.3",
-  "description": "> TODO: description",
+  "name": "@dino-cli-dev/exec",
+  "version": "1.0.0",
+  "description": "dynamic exe command",
   "author": "随步 <suibu@qunhemail.com>",
-  "homepage": "https://github.com/walk-liuyan/dino-cli#readme",
+  "homepage": "https://github.com/walk-liuyan/dino-cli/tree/main/commands/exec#readme",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/walk-liuyan/dino-cli/issues"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@dino-cli-dev/log": "file:../../utils/log",
+    "@dino-cli-dev/package": "file:../../models/package"
+  }
 }

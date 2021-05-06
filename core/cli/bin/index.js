@@ -3,8 +3,6 @@
 const importLocal = require('import-local')
 const log = require('@dino-cli-dev/log')
 
-
-
 // 本地运行
 if(importLocal(__filename)) {
   // 如果是用了本地link的npm包，就会进入这个模块

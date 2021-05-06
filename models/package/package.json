@@ -1,9 +1,9 @@
 {
-  "name": "@dino-cli-dev/utils",
-  "version": "1.0.3",
+  "name": "@dino-cli-dev/package",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "随步 <suibu@qunhemail.com>",
-  "homepage": "https://github.com/walk-liuyan/dino-cli#readme",
+  "homepage": "https://github.com/walk-liuyan/dino-cli/tree/main/commands/package#readme",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/walk-liuyan/dino-cli/issues"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@dino-cli-dev/utils": "file:../../utils/utils",
+    "pkg-dir": "5.0.0"
+  }
 }
