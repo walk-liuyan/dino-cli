@@ -1,6 +1,6 @@
 {
   "name": "@dino-cli-dev/exec",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "dynamic exe command",
   "author": "随步 <suibu@qunhemail.com>",
   "homepage": "https://github.com/walk-liuyan/dino-cli/tree/main/commands/exec#readme",

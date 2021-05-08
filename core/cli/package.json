@@ -1,6 +1,6 @@
 {
   "name": "@dino-cli-dev/core",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "> TODO: description",
   "author": "随步 <suibu@qunhemail.com>",
   "homepage": "https://github.com/walk-liuyan/dino-cli#readme",
@@ -30,11 +30,11 @@
     "url": "https://github.com/walk-liuyan/dino-cli/issues"
   },
   "dependencies": {
-    "@dino-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
     "@dino-cli-dev/exec": "file:../exec",
+    "@dino-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
+    "@dino-cli-dev/init": "file:../../commands/init",
     "@dino-cli-dev/log": "file:../../utils/log",
     "@dino-cli-dev/utils": "file:../../utils/utils",
-    "@dino-cli-dev/init": "file:../../commands/init",
     "colors": "^1.4.0",
     "commander": "7.2.0",
     "dotenv": "^8.2.0",
