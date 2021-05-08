@@ -44,6 +44,7 @@ class Package {
 
         if (this.storeDir) {
             await this.prepare()
+            console.log(this.cacheFilePath)
             return pathExists(this.cacheFilePath)
         } else {
             return pathExists(this.targetPath)
