@@ -20,6 +20,8 @@
     "webpack-cli": "4.6.0"
   },
   "dependencies": {
-    "path-exists": "4.0.0"
+    "npminstall": "4.11.0",
+    "path-exists": "4.0.0",
+    "user-home": "3.0.0"
   }
 }

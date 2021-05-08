@@ -1,9 +1,9 @@
 {
-  "name": "@dino-cli-dev/package",
-  "version": "1.0.0",
+  "name": "@dino-cli-dev/format-path",
+  "version": "1.0.3",
   "description": "> TODO: description",
   "author": "随步 <suibu@qunhemail.com>",
-  "homepage": "https://github.com/walk-liuyan/dino-cli/tree/main/commands/package#readme",
+  "homepage": "https://github.com/walk-liuyan/dino-cli/tree/main/commands/format-path#readme",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
@@ -25,13 +25,5 @@
   },
   "bugs": {
     "url": "https://github.com/walk-liuyan/dino-cli/issues"
-  },
-  "dependencies": {
-    "@dino-cli-dev/format-path": "file:../../utils/format-path",
-    "@dino-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
-    "@dino-cli-dev/utils": "file:../../utils/utils",
-    "npminstall": "4.11.0",
-    "path-exists": "4.0.0",
-    "pkg-dir": "5.0.0"
   }
 }

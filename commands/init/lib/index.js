@@ -4,9 +4,9 @@
 // 3、内置模块 require('fs')
 // 命令形式运行：node -e require('../xx')
 
-function init(name, options, command) {
+function init (name, options, command) {
   console.log('init');
-  // console.log('command', command)
+  console.log('command', command)
   const parentcmd = command.parent
   //console.log('parentcmd', parentcmd)
 }

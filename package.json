@@ -6,13 +6,15 @@
   "bin": {
     "dino-cli-dev": "bin/index.js"
   },
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint --ext .js,.ts,.tsx  --fix"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "commander": "7.2.0",
-    "eslint": "7.25.0",
+    "eslint": "7.26.0",
     "lerna": "^4.0.0"
   },
   "dependencies": {},
